@@ -10,7 +10,6 @@ const someOtherPlaintextPassword = 'not_bacon';
 async function hashAndStorePasswordAsync(password) {
     try {
         const hash = await bcrypt.hash(password, saltRounds);
-        // Hier würdest du den Hash in deiner Datenbank speichern
         console.log("Asynchronous Hash:", hash);
         return hash;
     } catch (err) {
@@ -31,7 +30,6 @@ async function comparePasswordsAsync(plaintextPassword, hash) {
 // Synchronisierte Funktionen
 function hashAndStorePasswordSync(password) {
     const hash = bcrypt.hashSync(password, saltRounds);
-    // Hier würdest du den Hash in deiner Datenbank speichern
     console.log("Synchronous Hash:", hash);
     return hash;
 }
