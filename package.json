@@ -16,6 +16,7 @@
     "express-validator": "^7.0.1",
     "fs": "^0.0.1-security",
     "jsonwebtoken": "^9.0.2",
+    "sqlite": "^5.0.1",
     "sqlite3": "^5.1.6"
   }
 }

@@ -23,10 +23,9 @@ const login = async (req, res) => {
 
   const { username, password } = req.body;
 
-  // Hier sollten Sie Ihre tatsächliche Benutzerdatenabruflogik aus einer Datenbank einfügen
   const user = {
-    username: "exampleuser",
-    // Ersetzen Sie dies durch das gehashte Passwort aus Ihrer Datenbank
+    username: "Max",
+    
     hashedPassword: "$2b$10$123456789012345678901uTwE3MzCGp1p/n6EhGQnzW7lqHoz2C"
   };
 

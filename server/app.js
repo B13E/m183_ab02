@@ -1,6 +1,8 @@
 const express = require("express");
 const http = require("http");
 const { initializeAPI } = require("./api");
+const sqlite = require("sqlite");
+
 
 // Create the express server
 const app = express();
