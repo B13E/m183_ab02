@@ -4,7 +4,7 @@ const fs = require('fs');
 // Ein Token erstellen
 function createToken() {
     const payload = { user: 'Max', role: 'admin' };
-    const secret = 'Admin123'; // Nur für Demonstration, verwenden Sie in der Produktion einen sichereren Schlüssel!
+    const secret = 'Admin123'; 
     const options = { expiresIn: '1h' };
     
     const token = jwt.sign(payload, secret, options);
